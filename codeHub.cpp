@@ -1,23 +1,23 @@
 #include<iostream>
 #include<string>
+#include<sstream>
 using namespace std;
 
-//A. Team
+//string to int
+//#include<sstream>
 
 int main()
 {
-	int numOfTeam = 0;
-	int x, y, z;
-	int res=0;
-	cout << "Enter Num Of Teams\n";
-	cin >> numOfTeam;
-	cout << "Enter Opinions\n";
-	for (int i = 0; i < numOfTeam; i++) {
-		cin >> x >> y >> z;
-		//to calc the opinions;
-		res += (x + y + z >= 2);
+	string value = "200";
+	int num; // to put the num as a number
+	stringstream s;
+	s << value; //to put num in s
+	s >> num;	//get value and put it in int
+	//to check
+	int result = num - 50;
+	cout << result;
 
-	}cout << res;
+
 
 	
 
